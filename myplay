@@ -1,0 +1,18 @@
+- name: My PlayBook
+  hosts: client1
+  become: yes
+
+  tasks:
+  - name: Update System
+    shell: sudo apt update
+  - name: MC install
+    shell: sudo apt install mc
+  - name: PHP8 Install
+    shell: sudo apt -y install php
+  - name: PHP Version
+    shell: php -v
+
+
+
+
+
